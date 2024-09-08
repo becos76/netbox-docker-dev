@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "my-test-plugin"
+version = "0.1.0"
+description = ""
+authors = ["becos76"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "my_test_plugin"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.dev.dependencies]
+invoke = "^2.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
